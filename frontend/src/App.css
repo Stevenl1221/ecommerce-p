@@ -1,3 +1,40 @@
 .App {
   text-align: center;
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  float: left;
+  list-style: none;
+}
+
+.navbar li a{
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 1.9rem
+}
+
+.logo {
+  width: auto;
+  height: 2.4rem;
+}
+
+.navbar li:after {
+  content: "|"; /* This is your divider */
+  position: absolute;
+  right: -10px; /* Adjust positioning as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333; /* Adjust color as needed */
+}
+
+/* Remove divider from the last item */
+.navbar li:last-child:after {
+  content: none;
+}

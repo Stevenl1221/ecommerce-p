@@ -1,25 +1,31 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import "../App.css";
 
 const Navigation = () => {
     return (
-        <nav>
+        <nav className="navbar">
             <ul>
                 <li>
-                    <NavLink to="/home">Home</NavLink>
+                    <NavLink to="/home"><img src="Guardian-logo-dark.png" alt="Guardian-logo-dark" className="logo"></img></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/account">Account</NavLink>
+                    <NavLink to="/home">Insurance</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/signup">Sign up</NavLink>
+                    <NavLink to="/account">Investments</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/signin">Sign in</NavLink>
+                    <NavLink to="/signup">Resources</NavLink>
                 </li>
-
+                <li>
+                    <NavLink to="/signin">About Us</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/signin">I am...</NavLink>
+                </li>
             </ul>
         </nav>
-    )
+    );
 };
 
 export default Navigation;
