@@ -2,9 +2,44 @@
   text-align: center;
 }
 
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  position: relative;
+  opacity: 0.5;
+}
+
+.home-overlay {
+  background: rgba(0, 0, 0, 1);
+}
+
 .navbar {
   display: flex;
-  justify-content: center;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  color: white;
+  padding-top: .3rem;
+  padding-bottom: .2rem;
+  margin: 0 auto;
+  font-family: Effra, Tahoma, sans-serif;
+  border-bottom: .1rem solid transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar.fixed {
+  background-color: #faf9f2;
+  border-bottom: .1rem solid #cfc78f;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
 }
 
 .navbar li {
@@ -12,29 +47,22 @@
   list-style: none;
 }
 
-.navbar li a{
-  padding: 10px;
+.navbar li a {
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-decoration: none;
-  font-weight: 700;
-  color: black;
-  font-size: 1.9rem
+  font-weight: bolder;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.navbar.fixed li a {
+  color: #0d3f5e;
 }
 
 .logo {
   width: auto;
-  height: 2.4rem;
-}
-
-.navbar li:after {
-  content: "|"; /* This is your divider */
-  position: absolute;
-  right: -10px; /* Adjust positioning as needed */
-  top: 50%;
-  transform: translateY(-50%);
-  color: #333; /* Adjust color as needed */
-}
-
-/* Remove divider from the last item */
-.navbar li:last-child:after {
-  content: none;
+  height: 1.6rem;
+  padding-right: 2rem;
+  margin-left: 6rem;
 }
