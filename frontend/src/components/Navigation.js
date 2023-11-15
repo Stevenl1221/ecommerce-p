@@ -31,7 +31,7 @@ const Navigation = () => {
           <NavLink to="/home">Insurance</NavLink>
         </li>
         <li>
-          <NavLink to="/account">Investments</NavLink>
+          <NavLink to="/account">API Practice</NavLink>
         </li>
         <li>
           <NavLink to="/signup">Resources</NavLink>

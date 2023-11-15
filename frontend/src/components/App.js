@@ -29,7 +29,6 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        {/* <Route path="/signup" element={<SignUp />} /> */}
       </Routes>
     </Router>
     // </AuthProvider>

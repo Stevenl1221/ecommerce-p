@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(255, 227, 227);
 }
 
 .background-image {
@@ -24,17 +25,17 @@
   position: fixed;
   z-index: 1000;
   color: white;
-  padding-top: .3rem;
-  padding-bottom: .2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
   margin: 0 auto;
   font-family: Effra, Tahoma, sans-serif;
-  border-bottom: .1rem solid transparent;
+  border-bottom: 0.1rem solid transparent;
   transition: 0.3s ease-in-out;
 }
 
 .navbar.fixed {
   background-color: #faf9f2;
-  border-bottom: .1rem solid #cfc78f;
+  border-bottom: 0.1rem solid #cfc78f;
 }
 
 .navbar ul {
@@ -65,4 +66,14 @@
   height: 1.6rem;
   padding-right: 2rem;
   margin-left: 6rem;
+}
+
+table {
+  display: table-header-group;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
 }
